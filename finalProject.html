@@ -1,0 +1,275 @@
+<!--
+Name: Rodney Bradshaw
+Class: WEB 115
+Date: 4/20/2023
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEB-115 Final Project</title>
+    <style>
+header{
+    text-align: center;
+    background-color: #253439;
+}
+.grid1{
+		display: grid; 
+		grid-template-columns:auto auto; 
+		grid-gap: 20px;
+	 }
+.grid2{
+        display: grid; 
+		grid-template-columns:auto auto auto; 
+		grid-gap: 5px;   
+}
+.line{
+    border-top: 3px dotted #016126
+}
+legend{
+    color: rgb(1, 1, 82);
+    font: 1.35em sans-serif;
+}
+.legend{
+    color: rgb(133, 0, 0);
+    font-size: 1em;
+    font-family:'Courier New', Courier, monospace
+}
+#myButton{
+    background-color: blue;
+    padding: 10px;
+    color: beige;
+    border-radius: 15px;
+}
+#button{
+    text-align: center;
+}
+fieldset{ border-radius: 10px;}
+footer p {
+    text-align: center;
+    color: rgb(1, 37, 25);
+    font-size: .75em;
+}
+    </style>
+</head>
+<body>
+    <header><img src="images/header.jpg" alt="header"></header><br />
+<div class="grid1">
+<fieldset>
+    <legend>Personal Details:</legend>
+    <label>Enter Full Name:</label><br />
+    <input type="text" id="name" placeholder = "Enter your Full Name."/><br /><br />
+						
+    <label>Enter Your Address:</label><br />
+    <input type="text" id="address" placeholder = "Enter your address."/><br /><br />
+	
+    <label>Enter Your Town:</label><br />
+    <input type="text" id="town" placeholder = "Enter your town."/><br /><br />
+		
+    <label>Enter Your State:</label><br />
+    <input type="text" id="state" placeholder = "Enter your state."/><br /><br />
+
+    <label>Enter Your Zip:</label><br />
+    <input type="text" id="zip" placeholder = "Enter your zip." maxlength="5"/><br /><br />
+
+    <label>Enter Your Email:</label><br />
+    <input type="email" id="email" placeholder = "Enter your email"/><br /><br />
+
+    <label>Enter Phone Number:</label><br />
+    <input type="tel" id = "tele" placeholder="123-452-6278" /><br /><br />
+
+</fieldset>
+<fieldset>
+<legend>Social Links</legend>
+<label>Facebook:</label><br />
+<input type="text" id="fb" size=50 /><br /><br />
+
+<label>Instagram:</label><br />
+<input type="text" id="ints"size=50  /><br /><br />
+<label>Twitter:</label><br />
+<input type="text" id="tw" size=50 /><br /><br />
+<label>TikTok:</label><br />
+<input type="text" id="tt" size=50 /><br /><br />
+</fieldset>
+
+</div>
+<hr>
+<div class="grid1">
+<fieldset>  
+<legend>Skills Set:</legend>
+<p>Example: Critical Thinking, Flexibility, Problem Solving, Team Leader </p>
+<label>Skill 1:</label><br />
+<input type="text" id="skill1" size=50 /><br /><br />
+<label>Skill 2:</label><br />
+<input type="text" id="skill2" size=50 /><br /><br />
+<label>Skill 3:</label><br />
+<input type="text" id="skill3" size=50 /><br /><br />
+<label>Skill 4:</label><br />
+<input type="text" id="skill4" size=50 /><br /><br />
+
+</fieldset>
+<fieldset>
+    <legend>Technical Skills:</legend>
+    <input type="checkbox"  id="html" value="HTML &#9622" name="skill">
+    <label for="lang1"> HTML</label><br>
+    <input type="checkbox" id="php" value="PHP &#9622" name="skill">
+    <label for="lang2"> PHP</label><br>
+    <input type="checkbox" id="css" value="CSS &#9622" name="skill">
+    <label for="lang3"> CSS</label><br>
+    <input type="checkbox" id="javas" value="Javascript &#9622" name="skill">
+    <label for="lang4"> Javascript</label><br>
+    <input type="checkbox"  id="csharp" value="C#" name="skill">
+    <label for="lang5"> C#</label><br>
+ 
+</fieldset>
+
+</div>
+
+<hr>
+<div class="grid1">
+<fieldset>
+    
+<legend>Education Background:</legend>
+<div class="grid1">
+<div>
+<label>High School:</label><br />
+<textarea name="highSch" id="highSch" cols="30" rows="2"></textarea><br /><br />
+</div>
+<div>
+    <label>Graduation Year:</label><br />
+<input type="text" id="gradHigh" placeholder="YYYY" min="1950" max="2023" /><br /><br />
+</div>
+<div>
+<label>College:</label><br />
+<textarea name="college" id="college" cols="30" rows="2"></textarea><br /><br />
+</div>
+<div>
+    <label>Graduation Year:</label><br />
+    <input type="text" id="gradCol"  placeholder="YYYY" min="1950"/><br /><br />
+</div>
+</div>
+
+<label>Degree Type:</label><br />
+<input type="text" id="degree"  /><br /><br />
+</fieldset>
+<fieldset>
+    <legend>Hobbies:</legend>
+    <label>Hobby 1:</label><br />
+<input type="text" id="hob1"  /><br /><br />
+<label>Hobby 2:</label><br />
+<input type="text" id="hob2"  /><br /><br />
+<label>Hobby 3:</label><br />
+<input type="text" id="hob3"  /><br /><br />
+    
+    </fieldset>
+</div>
+<hr>
+<div class="grid1">
+<fieldset>
+<legend>Most Recent Work Experience:</legend>
+<div class="grid2">
+    <div>
+    <legend class="legend">Place:</legend>
+    <input type="text" id="pl1" size=40 /><br /><br />
+    </div>
+    <div>
+    <legend class="legend">Start Date:</legend>
+    <input type="date" id="myDate1" /><br /><br />
+    </div>
+    <div>
+    <legend class="legend">End Date:</legend>
+    <input type="date" id="myDate2" /><br /><br />
+    </div>
+</div>
+    <legend class="legend">Job Title:</legend>
+    <textarea name="jb1" id="jb1" cols="30" rows="2"></textarea><br /><br />
+<hr class="line">
+<div class="grid2">
+    <div>
+    <legend class="legend">Place:</legend>
+    <input type="text" id="pl2" size=40 /><br /><br />
+    </div>
+    <div>
+    <legend class="legend">Start Date:</legend>
+    <input type="date" id="myDate3" /><br /><br />
+    </div>
+    <div>
+    <legend class="legend">End Date:</legend>
+    <input type="date" id="myDate4" /><br /><br />
+    </div>
+</div>
+    <legend class="legend">Job Title:</legend>
+    <textarea name="jb2" id="jb2" cols="30" rows="2"></textarea><br /><br />
+<hr class="line">
+<div class="grid2">
+    <div>
+    <legend class="legend">Place:</legend>
+    <input type="text" id="pl3" size=40 /><br /><br />
+    </div>
+    <div>
+    <legend class="legend">Start Date:</legend>
+    <input type="date" id="myDate5" /><br /><br />
+    </div>
+    <div>
+    <legend class="legend">End Date:</legend>
+    <input type="date" id="myDate6" /><br /><br />
+    </div>
+</div>
+<legend class="legend">Job Title:</legend>
+<textarea name="jb3" id="jb3" cols="30" rows="2"></textarea><br /><br />
+
+</fieldset>
+
+<fieldset>
+    <legend>Business References:</legend>
+    <p>Should Include Name, Company, Title and Email</p>
+ <div class="grid1">  
+<div>
+<label>First:</label><br />
+<textarea name="ref1" id="ref1" cols="30" rows="2"></textarea><br /><br />
+</div>
+<div>
+    <label>Telephone:</label><br />
+    <input type="tel" id="tel1" placeholder="123-452-6278"/><br /><br /> 
+</div>
+<div>
+<label>Second:</label><br />
+<textarea name="ref2" id="ref2" cols="30" rows="2"></textarea><br /><br />
+</div>
+<div>
+    <label>Telephone:</label><br />
+    <input type="tel" id="tel2" placeholder="123-452-6278"/><br /><br /> 
+</div>
+<div>
+<label>Third:</label><br />
+<textarea name="ref3" id="ref3" cols="30" rows="2"></textarea><br /><br />
+</div>
+<div>
+    <label>Telephone:</label><br />
+    <input type="tel" id="tel3" placeholder="123-452-6278"/><br /><br /> 
+</div>
+</div> 
+    </fieldset>
+</div>
+
+<br><br>
+<div id="button">
+<input type="button" id ="myButton" value = "Create Resume">
+</div>
+
+
+<br>
+
+<hr>
+
+<footer>
+    <p>&copy; Copyright 2023 Rodney Bradshaw. All Rights Reserved.</p>
+</footer>
+
+    <script src="projectJS.js"></script>
+
+</body>
+</html>
